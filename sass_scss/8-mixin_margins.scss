@@ -11,8 +11,8 @@ You must use a mixin */
 
 body {
   @include my-margin(10px);
+}
 
   div {
     @include my-margin($size: 15px);
   }
-}
