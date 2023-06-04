@@ -4,7 +4,7 @@ Margin left and right at 10px to body tags
 Margin left and right at 15px to div tags
 You must use a mixin */
 
-@mixin my-margin($size) {
+@mixin my-margin($size: 10px) {
   margin-left: $size;
   margin-right: $size;
 }
@@ -13,6 +13,6 @@ body {
   @include my-margin(10px);
 
   div {
-    @include my-margin(15px);
+    @include my-margin($size: 15px);
   }
 }
