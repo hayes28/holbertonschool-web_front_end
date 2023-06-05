@@ -71,7 +71,6 @@
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: .04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 0 2rem;
     --nav-item-link-hover: var(--color-white);
 
     /** BUTTON **/
@@ -251,13 +250,14 @@
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .header {
     padding: var(--header-padding);
-         position: relative;
-         z-index: 3;
-         background: transparent;
+    position: relative;
+    z-index: 3;
+    background: transparent;
   }
 
   /* Footer
