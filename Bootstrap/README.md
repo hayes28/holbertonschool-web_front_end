@@ -21,3 +21,7 @@ For this project, you will use Bootstrap 4.4 and only the CSS styling part.
 Add this <link> in the <head> part of your HTML
 
 ```<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">```
+
+## Author
+Heather Hayes [GitHub]- https://github.com/hayes28
+[LinkedIn]- https://www.linkedin.com/in/heatherhayes/
