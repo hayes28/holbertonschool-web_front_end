@@ -1,5 +1,9 @@
 # Sass & Scss
 
+## Author
+Heather Hayes [GitHub]- https://github.com/hayes28
+[LinkedIn]- https://www.linkedin.com/in/heatherhayes/
+
 # Resources
 Read or watch:
 
@@ -50,9 +54,5 @@ $ ```
 ```$ sudo apt-get install -y ruby2.5 ruby2.5-dev```
 ```$ sudo apt-get install ubuntu-dev-tools```
 ```$ gem install sass -v 3.7.4```
-```$ sass --version```
+```$ sass --version ```
 Ruby Sass 3.7.4
-
-## Author
-Heather Hayes [GitHub]- https://github.com/hayes28
-[LinkedIn]- https://www.linkedin.com/in/heatherhayes/
