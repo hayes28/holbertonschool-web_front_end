@@ -2,8 +2,8 @@
     --color-primary: #D73953;
     --color-black: #090909;
     --color-white: #FFFFFF;
-    --color-light-gray: #f3f3f3;
-    --color-dark-gray: #353535;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
     --text-color: var(--color-black);
 }
 
