@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    foreground-color: #161616;
+    color: #161616;
 }
 
-anchor {
+a {
     color: #161616;
 }
 
@@ -15,9 +15,9 @@ anchor {
 }
 
 .card-category {
-    foreground-color: #D73953;
+    color: #D73953;
 }
 
 .section-tagline {
-    foreground-color: #D73953;
+    color: #D73953;
 }
