@@ -58,7 +58,7 @@ a {
     text-align: var(--section-header-align);
 }
 
-section-title {
+.section-title {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-xx-large);
