@@ -48,7 +48,7 @@
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
-    --header-padding: 4rem 0;
+    --header-padding: 4rem 0 0;
     --header-logo-position: relative;
     --header-logo-link-display: inline-block;
     --header-logo-link-position: absolute;
@@ -72,7 +72,7 @@ html {
     font-size: 62.5%;
 }
 
-header {
+.header {
     padding: var(--header-padding);
 }
 
@@ -80,11 +80,16 @@ header {
     position: var(--header-logo-position);
 }
 
-.header-logo-link {
+.header-logo a {
     display: var(--header-logo-link-display);
     position: var(--header-logo-link-position);
     top: var(--header-logo-link-top);
     left: var(--header-logo-link-left);
+}
+
+a:link {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .navbar-menu {
