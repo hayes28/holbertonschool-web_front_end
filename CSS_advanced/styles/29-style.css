@@ -128,11 +128,11 @@ a:link {
     left: 0;
     height: 0.2rem;
     width: 0;
-    background: var(--color-white);
+    background-color: var(--color-white);
 }
 
 .nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-white);
+    background-color: var(--color-primary);
     width: 100%;
 }
 
