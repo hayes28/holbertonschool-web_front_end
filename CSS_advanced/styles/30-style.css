@@ -241,7 +241,7 @@ a:active {
 
 .card-work .card-inner {
     position: absolute;
-    left: -0.1rem;
+    top: -0.1rem;
     left: -0.1rem;
     right: -0.1rem;
     z-index: 1;
