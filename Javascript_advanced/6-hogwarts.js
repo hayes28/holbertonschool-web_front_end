@@ -28,7 +28,7 @@ harry.rewardStudent();
 harry.rewardStudent();
 harry.rewardStudent();
 harry.rewardStudent();
-console.log(harry.getScore());
+console.log(harry.getScore()); // Harry: 4
 
 let draco = studentHogwarts();
 draco.setName("Draco");
@@ -36,4 +36,4 @@ draco.rewardStudent();
 draco.penalizeStudent();
 draco.penalizeStudent();
 draco.penalizeStudent();
-console.log(draco.getScore());
+console.log(draco.getScore()); // Draco: -2
