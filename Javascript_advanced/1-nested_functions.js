@@ -19,3 +19,8 @@ function outer() {
 }
 
 outer();
+
+// Output:
+// Welcome
+// Welcome Holberton
+// Welcome Holberton!

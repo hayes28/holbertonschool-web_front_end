@@ -8,3 +8,7 @@ function welcome(firstName, lastName) {
     }
     displayFullName();
 }
+
+// Usage Examples:
+welcome('Holberton', 'School'); // alert 'Welcome Holberton School!'
+welcome('Bob', 'Dylan'); // alert 'Welcome Bob Dylan!'

@@ -10,3 +10,8 @@ function welcomeMessage(fullName) {
 let guillaume = welcomeMessage("Guillaume");
 let alex = welcomeMessage("Alex");
 let fred = welcomeMessage("Fred");
+
+// Usage Examples:
+guillaume(); // alert 'Welcome Guillaume'
+alex(); // alert 'Welcome Alex'
+fred(); // alert 'Welcome Fred'
