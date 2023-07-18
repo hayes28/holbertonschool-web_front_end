@@ -6,57 +6,69 @@
     <meta charset="utf-8" />
     <title>Task 6</title>
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <script type="application/javascript">
         $(document).ready(function () {
+            function createFamilyTree() {
+                $("body").append(
+                    $("<table>").append(
+                        $("<thead>").append(
+                            $("<tr>").append(
+                                $("<th>").text("Firstname"),
+                                $("<th>").text("Lastname")
+                            )
+                        ),
+                        $("<tbody>")
+                    )
+                );
+            }
+
+            function addNewMember(firstName, lastName, position) {
+                let newMember = $("<tr>").append(
+                    $("<td>").text(firstName),
+                    $("<td>").text(lastName),
+                    $("<td>").text("(x)").css("background-color", "orange").click(function () {
+                        newMember.remove();
+                    })
+                );
+
+                if (position === 'before') {
+                    // add to top of table
+                    $("tbody").prepend(newMember);
+                } else {
+                    // add to bottom of table
+                    $("tbody").append(newMember);
+                }
+            }
+
+            function createForm() {
+                const input1 = $('<input>').attr("type", "text");
+                const input2 = $('<input>').attr("type", "text");
+
+                const select = $('<select>').append(
+                    $("<option>").attr('value', 'before').text('Before'),
+                    $("<option>").attr('value', 'after').text('After')
+                );
+
+                const submit = $('<input>').attr('type', 'submit').click(function () {
+                    let firstName = $("input[type='text']").first().val();
+                    let lastName = $("input[type='text']:nth-of-type(2)").val();
+                    let position = $("select").val();
+                    addNewMember(firstName, lastName, position);
+                });
+
+                $("table").before(input1);
+                $("table").before(input2);
+                $("table").before(select);
+                $("table").before(submit);
+            }
+
             createFamilyTree();
             createForm();
         });
-
-        function createFamilyTree() {
-            $('body').append(`<table>
-                    <thead>
-                        <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                    </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>`);
-        };
-
-        function addNewMember(firstname, lastname, position) {
-            if (position == 'before') {
-                $('tbody').prepend(`<tr><td>${firstname}</td><td>${lastname}</td><td>(x)</td></tr>`);
-            } else {
-                $('tbody').append(`<tr><td>${firstname}</td><td>${lastname}</td><td>(x)</td></tr>`);
-            }
-
-            $('td:nth-child(3)').css('background-color', 'orange').click(function (e) {
-                $(this).parent().remove();
-            });
-        };
-
-        function createForm() {
-            $('table').before(`<form>
-            <input type="text">
-            <input type="text">
-            <select>
-                <option value="before">Before</option>
-                <option value="after">After</option>
-            </select>
-            <input type="submit" id="submit "value="Submit">
-            </form>`);
-
-            $('#submit ').submit(function (e) {
-                e.preventDefault();
-                addNewMember($('#firstName').val(), $('#lastName').val(),
-                    $('select').find(':selected').text().toLowerCase());
-            });
-        };
     </script>
 </body>
 
